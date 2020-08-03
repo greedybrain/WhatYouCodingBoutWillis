@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background-image: url("/images/desktop-b2.jpeg");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Source Code Pro', monospace;
+  margin: 0 auto;
+}
+
+body div.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+}
+
+body div.wrapper div.editor-simulation {
+  border-radius: 5px;
+  height: 90vh;
+  width: 75%;
+  background-color: #4e4e4e;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+body div.wrapper div.editor-simulation header {
+  height: 3vh;
+  padding: 0 10px;
+  background-color: #6d6d6d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .button {
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .button:not(:first-child) {
+  margin-left: 10px;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .red {
+  background-color: #ff5b5b;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .yellow {
+  background-color: #ffea2e;
+}
+
+body div.wrapper div.editor-simulation header div.window-buttons .green {
+  background-color: #00ff00;
+}
+
+body div.wrapper div.editor-simulation header div.logo {
+  margin: 0 auto;
+  color: #fff;
+  font-size: .7rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer {
+  background-color: #616161;
+  width: 50px;
+  height: 84vh;
+  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li {
+  text-align: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i {
+  color: #b8b8b8;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i:hover {
+  color: #fff;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li {
+  text-align: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i {
+  color: #b8b8b8;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i:hover {
+  color: #fff;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+body div.wrapper div.editor-simulation div.footer {
+  height: 3vh;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body div.wrapper div.editor-simulation div.footer div.copyright {
+  color: #fff;
+  font-size: .7rem;
+  height: 100%;
+  padding: 4px 0 4px 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 25%;
+  background-color: #00c000;
+  letter-spacing: 1px;
+  border-bottom-left-radius: 4px;
+}
+
+body div.wrapper div.editor-simulation div.footer div.hire-me {
+  color: #fff;
+  font-size: .7rem;
+  width: 75%;
+  height: 100%;
+  padding: 4px 10px 4px 0;
+  text-align: right;
+  background-color: #00b7ff;
+  letter-spacing: 1px;
+  border-bottom-right-radius: 4px;
+}
+/*# sourceMappingURL=index.css.map */
