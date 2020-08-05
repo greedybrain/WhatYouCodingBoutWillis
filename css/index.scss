@@ -19,6 +19,10 @@ img {
     width: 100%;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-image: url('/images/desktop-b2.jpeg');
     background-position: center;
@@ -30,6 +34,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        min-width: 1200px;
         max-width: 1200px;
         margin: 0 auto;
         div.editor-simulation {
@@ -189,68 +194,71 @@ body {
                         .path-icon {
                             color: #00b7ff;
                         }
-                        div.naya-image-cont-max {
-                            padding: 15px;
-                            width: 93%;
-                            font-size: 1rem;
-                            height: 80vh;
-                            overflow-x: scroll;
-                            img {
-                                width: 50%;
-                            }
-                            h3.name {
-                                margin: 7px 0;
-                                color: #9b9b9b;
-                                text-align: left;
-                            }
-                            p.about {
-                                width: 800px;
-                                color: #9b9b9b;
-                                text-align: left;
-                            }
-                        }
-                        div.naya-image-cont-min {
-                            position: absolute;
-                            top: 59px;
-                            right: 10px;
-                            z-index: 100;
-                            width: 50px;
-                            font-size: 5px;
-                            height: 80vh;
+                        div.inner-content {
                             overflow-y: scroll;
-                            cursor: pointer;
-                            padding: 5px;
-                            -webkit-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
-                            -moz-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
-                            box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
-                            h3.name {
-                                margin: 7px 0;
-                                color: #9b9b9b;
-                                text-align: left;
+                            div.naya-image-cont-max {
+                                padding: 15px;
+                                width: 35%;
+                                font-size: 1rem;
+                                height: 80vh;
+                                img {
+                                    border-radius: 5px;
+                                }
+                                h3.name {
+                                    margin: 7px 0;
+                                    color: #9b9b9b;
+                                    text-align: left;
+                                }
+                                p.about {
+                                    color: #9b9b9b;
+                                    text-align: left;
+                                    width: 275px;
+                                    line-height: 1.4;
+                                }
                             }
-                            p.about {
-                                color: #9b9b9b;
-                                text-align: left;
-                            }
-                            // h3.phone {
-                            //     font-size: 1rem;
-                            //     text-align: right;
-                            //     i {
-                            //         font-size: 1.3rem;
-                            //         color: #00c000;
-                            //     }
-                            // }
-                            // h3.email {
-                            //     font-size: 1rem;
-                            //     text-align: right;
-                            //     i {
-                            //         font-size: 1.3rem;
-                            //         color: #00c000;
-                            //     }
-                            // }
-                            &:hover {
-                                background-color: #5e5e5e7a;
-                                transition: background-color .3s linear;
+                            div.naya-image-cont-min {
+                                position: absolute;
+                                top: 59px;
+                                right: 10px;
+                                z-index: 100;
+                                width: 50px;
+                                font-size: 5px;
+                                height: 80vh;
+                                overflow-y: scroll;
+                                cursor: pointer;
+                                padding: 5px;
+                                -webkit-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
+                                -moz-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
+                                box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
+                                h3.name {
+                                    margin: 7px 0;
+                                    color: #9b9b9b;
+                                    text-align: left;
+                                }
+                                p.about {
+                                    color: #9b9b9b;
+                                    text-align: left;
+                                }
+                                // h3.phone {
+                                //     font-size: 1rem;
+                                //     text-align: right;
+                                //     i {
+                                //         font-size: 1.3rem;
+                                //         color: #00c000;
+                                //     }
+                                // }
+                                // h3.email {
+                                //     font-size: 1rem;
+                                //     text-align: right;
+                                //     i {
+                                //         font-size: 1.3rem;
+                                //         color: #00c000;
+                                //     }
+                                // }
+                                &:hover {
+                                    background-color: #5e5e5e7a;
+                                    transition: background-color .3s linear;
+                                }
                             }
                         }
                     }
