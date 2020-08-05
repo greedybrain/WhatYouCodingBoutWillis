@@ -24,7 +24,6 @@ img {
 }
 
 body {
-    background-image: url('/images/desktop-b2.jpeg');
     background-position: center;
     background-size: cover;
     font-family: 'Source Code Pro', monospace;
@@ -34,10 +33,66 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        min-width: 1200px;
-        max-width: 1200px;
+        max-width: none;
+        min-width: none;
         margin: 0 auto;
+        div.landing {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: url('/images/desktop-b3.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            div.menu-bar {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                background-color: #333333ce;
+                height: 3vh;
+                ul {
+                    display: flex;
+                    margin-left: 15px;
+                    align-items: center;
+                    height: 100%;
+                    li {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: .8rem;
+                        color: #fff;
+                        &:not(:first-child) {
+                            margin-left: 15px;
+                        }
+                    }
+                    li.important {
+                        font-weight: bolder;
+                    }
+                }
+            }
+            div.vscode-icon {
+                align-self: center;
+                width: 100px;
+                margin-top: 250px;
+                margin-right: 250px;
+                cursor: pointer;
+                p.caption {
+                    color: #fff;
+                    letter-spacing: 2px;
+                    margin-top: 10px;
+                    text-align: center;
+                    font-size: 1.1rem;
+                    text-shadow: 0px 0px 9px rgba(0, 0, 0, 0.58);
+                }
+                &:hover {
+                    width: 125px;
+                    transition: width .2s linear;
+                }
+            }
+        }
         div.editor-simulation {
+            display: none;
             border-radius: 5px;
             height: 90vh;
             width: 75%;
@@ -119,6 +174,7 @@ body {
                     div.social {
                         ul.social-nav {
                             li {
+                                display: none;
                                 text-align: center;
                                 &:not(:last-child) {
                                     margin-bottom: 15px;
@@ -150,6 +206,7 @@ body {
                                 padding: 7px;
                                 color: #b8b8b8;
                                 font-size: .7rem;
+                                cursor: pointer;
                                 i {
                                     margin-right: 7px;
                                     font-size: .8rem;
@@ -171,18 +228,21 @@ body {
                                 }
                             }
                             li.git-projects {
+                                display: none;
                                 i {
                                     color: #00b7ff;
                                 }
                             }
                             li.contact {
-                                // background-color: #3f3f3f;
+                                display: none;
                                 i {
                                     color: #00b7ff;
                                 }
                             }
                         }
                         div.path {
+                            position: relative;
+                            z-index: 100;
                             color: #9b9b9b;
                             font-size: .6rem;
                             padding: 5px;
@@ -191,13 +251,35 @@ body {
                             -moz-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
                             box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
                         }
+                        div.projects-path {
+                            display: none;
+                        }
+                        div.contact-path {
+                            display: none;
+                        }
                         .path-icon {
                             color: #00b7ff;
                         }
                         div.inner-content {
+                            height: 80vh;
                             overflow-y: scroll;
+                            display: flex;
+                            div.line-numbers {
+                                margin-top: 2px;
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    border-right: 1px solid #ffffff2d;
+                                    li {
+                                        padding: 2px 20px;
+                                        text-align: right;
+                                        border-right: none;
+                                        background-color: #3f3f3f;
+                                    }
+                                }
+                            }
                             div.naya-image-cont-max {
-                                padding: 15px;
+                                padding: 20px;
                                 width: 35%;
                                 font-size: 1rem;
                                 height: 80vh;
@@ -214,6 +296,7 @@ body {
                                     text-align: left;
                                     width: 275px;
                                     line-height: 1.4;
+                                    padding-bottom: 20px;
                                 }
                             }
                             div.naya-image-cont-min {
