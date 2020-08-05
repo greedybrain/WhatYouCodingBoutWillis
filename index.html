@@ -11,10 +11,28 @@
 </head>
 
 <body>
-    <div class="menu-bar">
+    <!-- <div class="menu-bar">
 
-    </div>
+    </div> -->
     <div class="wrapper">
+        <div class="landing">
+            <div class="menu-bar">
+                <ul>
+                    <li><i class="fab fa-apple"></i></li>
+                    <li class="important">Finder</li>
+                    <li>File</li>
+                    <li>Edit</li>
+                    <li>View</li>
+                    <li>Go</li>
+                    <li>Window</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="vscode-icon animate__animated animate__pulse animate__faster  animate__infinite">
+                <img src="/images/vscode-icon.png" alt="vscode icon">
+                <p class="caption">VSCode</p>
+            </div>
+        </div>
         <div class="editor-simulation">
             <header>
                 <div class="window-buttons">
@@ -31,30 +49,30 @@
                     <ul class="nav">
                         <li class="user icon" title='READ-ME'><i class="fas fa-user-astronaut"></i></li>
                         <li class="git icon" title="Github Projects"><i class="fas fa-code-branch"></i></li>
-                        <!-- <li class="icon"></li> -->
+                        <li class="contact-me icon" title="Contact Me"><i class="fas fa-at"></i></li>
                     </ul>
                     <div class="social">
                         <ul class="social-nav">
-                            <li class="icon animate__animated animate__bounceInDown" title="Github">
+                            <li class="s-icon icon github" title="Github">
                                 <a href="https://github.com/greedybrain" target="_blank">
                                     <i class="fab fa-github"></i></li>
                             </a>
-                            <li class="icon animate__animated animate__bounceInDown" title="LinkedIn">
+                            <li class="s-icon icon linkedin" title="LinkedIn">
                                 <a href="https://www.linkedin.com/in/naya-willis-b6b30131/" target="_blank">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </li>
-                            <li class="icon animate__animated animate__bounceInDown" title="DEV.to">
+                            <li class="s-icon icon dev" title="DEV.to">
                                 <a href="https://dev.to/greedybrain" target="_blank">
                                     <i class="fab fa-dev"></i>
                                 </a>
                             </li>
-                            <li class="icon animate__animated animate__bounceInDown" title="Twitter">
+                            <li class="s-icon icon twitter" title="Twitter">
                                 <a href="https://twitter.com/naya_willis" target="_blank">
                                     <i class="fab fa-twitter-square"></i>
                                 </a>
                             </li>
-                            <li class="icon animate__animated animate__bounceInDown" title="Facebook">
+                            <li class="s-icon icon fb" title="Facebook">
                                 <a href="https://www.facebook.com/caspacodes" target="_blank">
                                     <i class="fab fa-facebook-square"></i>
                                 </a>
@@ -69,10 +87,21 @@
                             <li class="tab git-projects"><i class="fas fa-project-diagram"></i>PROJECTS.mine<span class="close">&times;</span></li>
                             <li class="tab contact"><i class="fas fa-at"></i>CONTACT.me<span class="close">&times;</span></li>
                         </ul>
-                        <div class="path">
+                        <div class="readme-path path">
                             <i class="fas fa-user-astronaut path-icon"></i> Naya Willis &gt; <i class="fas fa-info-circle path-icon"></i> READ.me
                         </div>
+                        <div class="projects-path path">
+                            <i class="fas fa-user-astronaut path-icon"></i> Naya Willis &gt; <i class="fas fa-project-diagram path-icon"></i> PROJECTS.mine
+                        </div>
+                        <div class="contact-path path">
+                            <i class="fas fa-user-astronaut path-icon"></i> Naya Willis &gt; <i class="fas fa-at  path-icon"></i> CONTACT.me
+                        </div>
                         <div class="inner-content">
+                            <div class="line-numbers">
+                                <ul class="number-list">
+
+                                </ul>
+                            </div>
                             <div class="naya-image-cont-max">
                                 <a href="https://www.linkedin.com/in/naya-willis-b6b30131/" target="_blank">
                                     <img src="/images//naya-willis-wycbw.jpg" alt="profile-image">
@@ -105,6 +134,7 @@
             </div>
         </div>
     </div>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
