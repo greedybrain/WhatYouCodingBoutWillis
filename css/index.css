@@ -373,11 +373,11 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max {
   padding: 20px;
+  margin-top: 10px;
   width: 40%;
   font-size: 1rem;
   height: 100%;
-  -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  border-right: 1px solid #333;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max img {
@@ -394,7 +394,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max p.about {
   color: #9b9b9b;
   text-align: left;
-  line-height: 1.4;
   padding-bottom: 20px;
 }
 
