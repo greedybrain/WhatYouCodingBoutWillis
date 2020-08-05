@@ -33,8 +33,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: none;
-        min-width: none;
+        width: 100%;
         margin: 0 auto;
         div.landing {
             position: relative;
@@ -43,7 +42,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-image: url('/images/desktop-b3.jpeg');
+            background-image: url('/images/desktop-b4.jpeg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -51,7 +50,7 @@ body {
                 position: absolute;
                 top: 0;
                 width: 100%;
-                background-color: #333333ce;
+                background-color: #ffffffce;
                 height: 3vh;
                 ul {
                     display: flex;
@@ -61,7 +60,7 @@ body {
                     li {
                         font-family: Arial, Helvetica, sans-serif;
                         font-size: .8rem;
-                        color: #fff;
+                        color: #000;
                         &:not(:first-child) {
                             margin-left: 15px;
                         }
@@ -74,8 +73,6 @@ body {
             div.vscode-icon {
                 align-self: center;
                 width: 100px;
-                margin-top: 250px;
-                margin-right: 250px;
                 cursor: pointer;
                 p.caption {
                     color: #fff;
@@ -95,6 +92,7 @@ body {
             display: none;
             border-radius: 5px;
             height: 90vh;
+            // min-height: 800px;
             width: 75%;
             background-color: #3f3f3f;
             -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
@@ -261,11 +259,12 @@ body {
                             color: #00b7ff;
                         }
                         div.inner-content {
-                            height: 80vh;
+                            // height: 100%;
                             overflow-y: scroll;
                             display: flex;
                             div.line-numbers {
                                 margin-top: 2px;
+                                height: 100%;
                                 ul {
                                     display: flex;
                                     flex-direction: column;
@@ -280,21 +279,25 @@ body {
                             }
                             div.naya-image-cont-max {
                                 padding: 20px;
-                                width: 35%;
+                                width: 40%;
                                 font-size: 1rem;
-                                height: 80vh;
+                                height: 100%;
+                                -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
+                                -moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
+                                box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
                                 img {
                                     border-radius: 5px;
+                                    width: 75%;
                                 }
                                 h3.name {
                                     margin: 7px 0;
-                                    color: #9b9b9b;
+                                    color: #fff;
                                     text-align: left;
                                 }
                                 p.about {
                                     color: #9b9b9b;
                                     text-align: left;
-                                    width: 275px;
+                                    // width: 275px;
                                     line-height: 1.4;
                                     padding-bottom: 20px;
                                 }
@@ -304,9 +307,9 @@ body {
                                 top: 59px;
                                 right: 10px;
                                 z-index: 100;
-                                width: 50px;
+                                width: 8%;
                                 font-size: 5px;
-                                height: 80vh;
+                                height: 79vh;
                                 overflow-y: scroll;
                                 cursor: pointer;
                                 padding: 5px;

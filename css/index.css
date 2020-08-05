@@ -42,8 +42,7 @@ body div.wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: none;
-  min-width: none;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -61,7 +60,7 @@ body div.wrapper div.landing {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("/images/desktop-b3.jpeg");
+  background-image: url("/images/desktop-b4.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -71,7 +70,7 @@ body div.wrapper div.landing div.menu-bar {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #333333ce;
+  background-color: #ffffffce;
   height: 3vh;
 }
 
@@ -89,7 +88,7 @@ body div.wrapper div.landing div.menu-bar ul {
 body div.wrapper div.landing div.menu-bar ul li {
   font-family: Arial, Helvetica, sans-serif;
   font-size: .8rem;
-  color: #fff;
+  color: #000;
 }
 
 body div.wrapper div.landing div.menu-bar ul li:not(:first-child) {
@@ -105,8 +104,6 @@ body div.wrapper div.landing div.vscode-icon {
       -ms-grid-row-align: center;
       align-self: center;
   width: 100px;
-  margin-top: 250px;
-  margin-right: 250px;
   cursor: pointer;
 }
 
@@ -345,7 +342,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content {
-  height: 80vh;
   overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,6 +350,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers {
   margin-top: 2px;
+  height: 100%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers ul {
@@ -376,25 +373,27 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max {
   padding: 20px;
-  width: 35%;
+  width: 40%;
   font-size: 1rem;
-  height: 80vh;
+  height: 100%;
+  -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max img {
   border-radius: 5px;
+  width: 75%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max h3.name {
   margin: 7px 0;
-  color: #9b9b9b;
+  color: #fff;
   text-align: left;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max p.about {
   color: #9b9b9b;
   text-align: left;
-  width: 275px;
   line-height: 1.4;
   padding-bottom: 20px;
 }
@@ -404,9 +403,9 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   top: 59px;
   right: 10px;
   z-index: 100;
-  width: 50px;
+  width: 8%;
   font-size: 5px;
-  height: 80vh;
+  height: 79vh;
   overflow-y: scroll;
   cursor: pointer;
   padding: 5px;
