@@ -76,7 +76,7 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
 //todo handling rendering number list 
 
 const handleNumberListRender = () => {
-    for (let x = 1; x <= 50; x++) {
+    for (let x = 1; x <= 36; x++) {
         const num = document.createElement('li')
         num.classList.add('number')
         num.textContent = x
