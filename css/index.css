@@ -261,7 +261,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
   position: relative;
   width: 100%;
-  border: 1px solid #fff;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
@@ -354,6 +353,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   display: flex;
   position: relative;
   z-index: 200;
+  margin-top: 8px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers {
@@ -371,7 +371,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
           flex-direction: column;
   border-right: 1px solid #ffffff2d;
   height: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul li {
@@ -379,6 +379,8 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   text-align: right;
   border-right: none;
   background-color: #272727;
+  color: #7e7e7e;
+  font-size: 0.7rem;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max {
@@ -459,8 +461,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   overflow: hidden;
 }
 

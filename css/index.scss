@@ -198,7 +198,6 @@ body {
                 div.edit {
                     position: relative;
                     width: 100%;
-                    border: $glance;
                     div.edit-head {
                         ul {
                             display: flex;
@@ -275,6 +274,7 @@ body {
                         display: flex;
                         position: relative;
                         z-index: 200;
+                        margin-top: 8px;
                         div.line-numbers {
                             margin-top: 3px;
                             height: 100%;
@@ -283,12 +283,14 @@ body {
                                 flex-direction: column;
                                 border-right: 1px solid #ffffff2d;
                                 height: 100%;
-                                padding-top: 20px;
+                                padding-top: 15px;
                                 li {
                                     padding: 1.5px 20px;
                                     text-align: right;
                                     border-right: none;
                                     background-color: $darkBg;
+                                    color: $iconColor;
+                                    font-size: 0.7rem;
                                 }
                             }
                         }
@@ -372,14 +374,13 @@ body {
                         }
                     }
                     div.footer {
-                        // width: 100%;
                         height: 3vh;
                         border-bottom-left-radius: 5px;
                         border-bottom-right-radius: 5px;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        align-self: flex-end;
+                        // align-self: flex-end;
                         overflow: hidden;
                         div.copyright {
                             color: #fff;
