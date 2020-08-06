@@ -218,15 +218,15 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i {
-  color: #b8b8b8;
+  color: #7e7e7e;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i:hover {
   color: #fff;
-  -webkit-transition: color 0.3s linear;
-  transition: color 0.3s linear;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.user {
@@ -247,20 +247,21 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i {
-  color: #b8b8b8;
+  color: #7e7e7e;
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i:hover {
   color: #fff;
-  -webkit-transition: color 0.3s linear;
-  transition: color 0.3s linear;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
   position: relative;
   width: 100%;
+  border: 1px solid #fff;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
@@ -298,7 +299,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.readme {
-  background-color: #3f3f3f;
+  background-color: #272727;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.readme i {
@@ -324,12 +325,11 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.path {
   position: relative;
   overflow: hidden;
-  height: 3vh;
+  height: 2vh;
   z-index: 100;
   color: #9b9b9b;
   font-size: 0.6rem;
-  padding: 5px;
-  border-top: 1px solid #474747;
+  padding: 2px 0 2px 8px;
   -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
 }
@@ -346,7 +346,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   color: #00b7ff;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
   height: 80vh;
   overflow-y: scroll;
   display: -webkit-box;
@@ -356,12 +356,12 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   z-index: 200;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers {
   margin-top: 3px;
   height: 100%;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers ul {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,14 +374,14 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   padding-top: 20px;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers ul li {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul li {
   padding: 1.5px 20px;
   text-align: right;
   border-right: none;
   background-color: #272727;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max {
   padding: 20px;
   margin-top: 10px;
   width: 40%;
@@ -389,33 +389,33 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   border-right: 1px solid #333;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max img {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max img {
   border-radius: 5px;
   width: 75%;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max h3.name {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max h3.name {
   display: inline;
   margin: 7px 0;
   color: #fff;
   text-align: left;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max span.html-mock {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max span.html-mock {
   color: #009cf7;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max .angle {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max .angle {
   color: #888888;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max p.about {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max p.about {
   color: #9b9b9b;
   text-align: left;
   padding-bottom: 20px;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min {
   position: absolute;
   right: 10px;
   z-index: 100;
@@ -429,24 +429,24 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min h3.name {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min h3.name {
   margin: 7px 0;
   color: #9b9b9b;
   text-align: left;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min p.about {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min p.about {
   color: #9b9b9b;
   text-align: left;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min:hover {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min:hover {
   background-color: #5e5e5e7a;
   -webkit-transition: background-color 0.3s linear;
   transition: background-color 0.3s linear;
 }
 
-body div.wrapper div.editor-simulation div.footer {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer {
   height: 3vh;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -464,7 +464,7 @@ body div.wrapper div.editor-simulation div.footer {
   overflow: hidden;
 }
 
-body div.wrapper div.editor-simulation div.footer div.copyright {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.copyright {
   color: #fff;
   font-size: 0.7rem;
   height: 100%;
@@ -478,7 +478,7 @@ body div.wrapper div.editor-simulation div.footer div.copyright {
   border-bottom-left-radius: 4px;
 }
 
-body div.wrapper div.editor-simulation div.footer div.hire-me {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me {
   color: #fff;
   font-size: 0.7rem;
   width: 75%;
