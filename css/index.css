@@ -450,6 +450,14 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   text-align: left;
 }
 
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min span.html-mock-min {
+  color: #34d6ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min .angle-min {
+  color: #888888;
+}
+
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min:hover {
   background-color: #5e5e5e7a;
   -webkit-transition: background-color 0.3s linear;
