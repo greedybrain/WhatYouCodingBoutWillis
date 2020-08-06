@@ -260,7 +260,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
   position: relative;
-  width: 100%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
@@ -327,7 +326,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   height: 2vh;
   z-index: 100;
   color: #9b9b9b;
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   padding: 2px 0 2px 8px;
   -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
@@ -343,6 +342,10 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head .path-icon {
   color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head .astro {
+  color: #00c000;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
@@ -385,7 +388,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max {
   padding: 20px;
-  margin-top: 10px;
   width: 40%;
   font-size: 1rem;
   height: 100%;
@@ -397,7 +399,11 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   width: 75%;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max h3.name {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.name-wrapper {
+  margin-bottom: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.name-wrapper h3.name {
   display: inline;
   margin: 7px 0;
   color: #fff;
@@ -415,6 +421,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max p.about {
   color: #9b9b9b;
   text-align: left;
+  line-height: 1.4;
   padding-bottom: 20px;
 }
 
@@ -450,7 +457,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer {
-  height: 3vh;
+  height: 2.2vh;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   display: -webkit-box;
@@ -469,7 +476,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer
   color: #fff;
   font-size: 0.7rem;
   height: 100%;
-  padding: 4px 0 4px 10px;
+  padding: 2px 0 2px 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -484,10 +491,18 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer
   font-size: 0.7rem;
   width: 75%;
   height: 100%;
-  padding: 4px 10px 4px 0;
+  padding: 2px 10px 2px 0;
   text-align: right;
-  background-color: #00b7ff;
+  background-color: #208ae0;
   letter-spacing: 1px;
   border-bottom-right-radius: 4px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me div.hire {
+  margin-right: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer div.hire-me a {
+  color: #fff;
 }
 /*# sourceMappingURL=index.css.map */
