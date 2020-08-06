@@ -27,7 +27,7 @@ img {
 body {
   background-position: center;
   background-size: cover;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   margin: 0 auto;
 }
 
@@ -87,7 +87,7 @@ body div.wrapper div.landing div.menu-bar ul {
 
 body div.wrapper div.landing div.menu-bar ul li {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #000;
 }
 
@@ -118,8 +118,8 @@ body div.wrapper div.landing div.vscode-icon p.caption {
 
 body div.wrapper div.landing div.vscode-icon:hover {
   width: 125px;
-  -webkit-transition: width .2s linear;
-  transition: width .2s linear;
+  -webkit-transition: width 0.2s linear;
+  transition: width 0.2s linear;
 }
 
 body div.wrapper div.editor-simulation {
@@ -127,7 +127,7 @@ body div.wrapper div.editor-simulation {
   border-radius: 5px;
   height: 90vh;
   width: 75%;
-  background-color: #3f3f3f;
+  background-color: #272727;
   -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
 }
@@ -135,7 +135,7 @@ body div.wrapper div.editor-simulation {
 body div.wrapper div.editor-simulation header {
   height: 3vh;
   padding: 0 10px;
-  background-color: #6d6d6d;
+  background-color: #424242;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +147,7 @@ body div.wrapper div.editor-simulation header {
           align-items: center;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 body div.wrapper div.editor-simulation header div.window-buttons {
@@ -181,7 +182,7 @@ body div.wrapper div.editor-simulation header div.window-buttons .green {
 body div.wrapper div.editor-simulation header div.logo {
   margin: 0 auto;
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit {
@@ -191,7 +192,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit {
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer {
-  background-color: #616161;
+  background-color: #3d3d3d;
   width: 50px;
   height: 87vh;
   display: -webkit-box;
@@ -224,8 +225,8 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li i:hover {
   color: #fff;
-  -webkit-transition: color .3s linear;
-  transition: color .3s linear;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.user {
@@ -253,8 +254,8 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li i:hover {
   color: #fff;
-  -webkit-transition: color .3s linear;
-  transition: color .3s linear;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
@@ -266,6 +267,8 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 4vh;
+  overflow: scroll;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li {
@@ -275,13 +278,13 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   text-align: center;
   padding: 7px;
   color: #b8b8b8;
-  font-size: .7rem;
+  font-size: 0.7rem;
   cursor: pointer;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li i {
   margin-right: 7px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li span.close {
@@ -320,9 +323,11 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.path {
   position: relative;
+  overflow: hidden;
+  height: 3vh;
   z-index: 100;
   color: #9b9b9b;
-  font-size: .6rem;
+  font-size: 0.6rem;
   padding: 5px;
   border-top: 1px solid #474747;
   -webkit-box-shadow: 0px 3px 2px -1px rgba(0, 0, 0, 0.75);
@@ -342,14 +347,17 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content {
+  height: 80vh;
   overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 200;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers {
-  margin-top: 2px;
+  margin-top: 3px;
   height: 100%;
 }
 
@@ -362,13 +370,15 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
       -ms-flex-direction: column;
           flex-direction: column;
   border-right: 1px solid #ffffff2d;
+  height: 100%;
+  padding-top: 20px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.line-numbers ul li {
-  padding: 2px 20px;
+  padding: 1.5px 20px;
   text-align: right;
   border-right: none;
-  background-color: #3f3f3f;
+  background-color: #272727;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max {
@@ -376,7 +386,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   margin-top: 10px;
   width: 40%;
   font-size: 1rem;
-  height: 100%;
   border-right: 1px solid #333;
 }
 
@@ -386,9 +395,18 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max h3.name {
+  display: inline;
   margin: 7px 0;
   color: #fff;
   text-align: left;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max span.html-mock {
+  color: #009cf7;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max .angle {
+  color: #888888;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-max p.about {
@@ -399,7 +417,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min {
   position: absolute;
-  top: 59px;
   right: 10px;
   z-index: 100;
   width: 8%;
@@ -425,8 +442,8 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head div.inner-content div.naya-image-cont-min:hover {
   background-color: #5e5e5e7a;
-  -webkit-transition: background-color .3s linear;
-  transition: background-color .3s linear;
+  -webkit-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
 }
 
 body div.wrapper div.editor-simulation div.footer {
@@ -442,11 +459,14 @@ body div.wrapper div.editor-simulation div.footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  overflow: hidden;
 }
 
 body div.wrapper div.editor-simulation div.footer div.copyright {
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
   height: 100%;
   padding: 4px 0 4px 10px;
   -ms-flex-item-align: center;
@@ -460,7 +480,7 @@ body div.wrapper div.editor-simulation div.footer div.copyright {
 
 body div.wrapper div.editor-simulation div.footer div.hire-me {
   color: #fff;
-  font-size: .7rem;
+  font-size: 0.7rem;
   width: 75%;
   height: 100%;
   padding: 4px 10px 4px 0;
