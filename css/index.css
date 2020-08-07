@@ -28,6 +28,24 @@ span.html-mock {
   color: #888888;
 }
 
+div.tooltip {
+  color: #c9c9c9;
+  z-index: 300;
+  right: 40px;
+  width: 150px;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #3d3d3d;
+  -webkit-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-position: center;
   background-size: cover;
@@ -503,32 +521,12 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   right: 10px;
   z-index: 100;
   width: 8%;
-  font-size: 5px;
   height: 79vh;
   overflow-y: scroll;
   cursor: pointer;
   padding: 5px;
   -webkit-box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -4px 0px 5px -2px rgba(0, 0, 0, 0.75);
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min h3.name {
-  margin: 7px 0;
-  color: #9b9b9b;
-  text-align: left;
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min p.about {
-  color: #9b9b9b;
-  text-align: left;
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min span.html-mock-min {
-  color: #34d6ff;
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min .angle-min {
-  color: #888888;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min:hover {

@@ -24,11 +24,16 @@ const nayaImageContWithCaptionMin = document.querySelector(
     "div.naya-image-cont-min"
 );
 const skillsEducation = document.querySelector("div.skills-education");
+const divTooltip = document.createElement("div");
+divTooltip.classList.add("tooltip");
+const explorerIcons = document.querySelectorAll("ul.nav li");
+const nav = document.querySelector("ul.nav");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleIconAnimation();
     handleRemoveLandingPageThenShowPortfolio();
     handleNumberListRender();
+    handleTooltip();
     handleReadmeRender();
     handleGithubProjectsRender();
     handleContactRender();
@@ -101,6 +106,37 @@ const handleNumberListRender = () => {
 
 //todo handle rendering READ.me
 
+const handleTooltip = () => {
+    Array.from(explorerIcons).forEach((icon) => {
+        icon.addEventListener("mouseenter", (e) => {
+            if (e.target.classList.contains("user")) {
+                e.target.style.position = "relative";
+                divTooltip.style.position = "absolute";
+                divTooltip.style.display = "block";
+                divTooltip.textContent = "About Me";
+                e.target.prepend(divTooltip);
+            } else if (e.target.classList.contains("git")) {
+                e.target.style.position = "relative";
+                divTooltip.style.position = "absolute";
+                divTooltip.style.display = "block";
+                divTooltip.textContent = "My Projects";
+                e.target.prepend(divTooltip);
+            } else if (e.target.classList.contains("contact-me")) {
+                e.target.style.position = "relative";
+                divTooltip.style.position = "absolute";
+                divTooltip.style.display = "block";
+                divTooltip.textContent = "Contact Me";
+                e.target.prepend(divTooltip);
+            } else if (e.target !== "[object HTMLUListElement]") {
+                divTooltip.style.display = "none";
+            }
+        });
+        icon.addEventListener("mouseleave", () => {
+            divTooltip.style.display = "none";
+        });
+    });
+};
+
 const handleReadmeRender = () => {
     user.addEventListener("click", (e) => {
         // turn on user > readme
@@ -115,13 +151,13 @@ const handleReadmeRender = () => {
 
         // turn off git stuff
         git.style.borderLeft = "none";
-        gitIcon.style.color = "#b8b8b8";
+        gitIcon.style.color = "#7e7e7e";
         gitProjects.style.backgroundColor = "#505050";
         projectsPath.style.display = "none";
 
         // turn off contact stuff
         contactMe.style.borderLeft = "none";
-        contactIcon.style.color = "#b8b8b8";
+        contactIcon.style.color = "#7e7e7e";
         contactPath.style.display = " none";
         contact.style.backgroundColor = "#505050";
     });
@@ -138,7 +174,7 @@ const handleGithubProjectsRender = () => {
 
         //turn off user stuff
         user.style.borderLeft = "none";
-        astronautIcon.style.color = "#b8b8b8";
+        astronautIcon.style.color = "#7e7e7e";
         readme.style.display = "block";
         readmePath.style.display = "none";
         readme.style.backgroundColor = "#505050";
@@ -148,7 +184,7 @@ const handleGithubProjectsRender = () => {
 
         // turn off contact stuff
         contactMe.style.borderLeft = "none";
-        contactIcon.style.color = "#b8b8b8";
+        contactIcon.style.color = "#7e7e7e";
         contactPath.style.display = " none";
         contact.style.backgroundColor = "#505050";
     });
@@ -164,13 +200,13 @@ const handleContactRender = () => {
 
         // turn off project stuff
         git.style.borderLeft = "none";
-        gitIcon.style.color = "#b8b8b8";
+        gitIcon.style.color = "#7e7e7e";
         gitProjects.style.backgroundColor = "#505050";
         projectsPath.style.display = "none";
 
         // turn off user
         user.style.borderLeft = "none";
-        astronautIcon.style.color = "#b8b8b8";
+        astronautIcon.style.color = "#7e7e7e";
         readme.style.display = "block";
         readmePath.style.display = "none";
         readme.style.backgroundColor = "#505050";
