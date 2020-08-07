@@ -17,6 +17,7 @@ a {
 
 .important-link {
   text-decoration: underline;
+  color: #007fd3;
 }
 
 img {
@@ -446,7 +447,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs div.fs-title {
-  color: #9b9b9b;
+  color: #fff;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement {
@@ -517,6 +518,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   border-bottom: 1px solid #9b9b9b;
   width: 100%;
   padding: 10px;
+  color: #fff;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title i,
@@ -571,7 +573,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 20px 60px 20px;
-  color: #9b9b9b;
+  color: #eeeeee;
   -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
 }
@@ -609,6 +611,55 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-head span {
   font-size: 0.9rem;
   margin-left: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body {
+  padding: 30px 50px;
+  width: 90%;
+  margin: 0 auto;
+  color: #eeeeee;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 10px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body p.summary {
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul li {
+  font-size: 0.8rem;
+  list-style-type: square;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.demo {
+  width: 90%;
+  margin: 30px auto 0 auto;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.alt-links {
+  margin: 35px auto;
+  width: 90%;
+  font-size: 0.9rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects div.project div.project-body div.alt-links a {
+  display: inline-block;
+  color: #007fd3;
+  text-decoration: underline;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min {

@@ -23,6 +23,7 @@ a {
 
 .important-link {
     text-decoration: underline;
+    color: #007fd3;
 }
 
 img {
@@ -358,7 +359,7 @@ body {
                                         width: 30px;
                                     }
                                     div.fs-title {
-                                        color: #9b9b9b;
+                                        color: #fff;
                                     }
                                 }
                                 div.achievement {
@@ -406,6 +407,7 @@ body {
                                         border-bottom: 1px solid #9b9b9b;
                                         width: 100%;
                                         padding: 10px;
+                                        color: #fff;
                                         i {
                                             margin-right: 15px;
                                         }
@@ -438,7 +440,7 @@ body {
                                     display: flex;
                                     align-items: center;
                                     padding: 20px 20px 60px 20px;
-                                    color: $fontColor;
+                                    color: #eeeeee;
                                     -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
                                     -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
                                     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
@@ -471,6 +473,46 @@ body {
                                     span {
                                         font-size: 0.9rem;
                                         margin-left: 5px;
+                                    }
+                                }
+                                div.project-body {
+                                    padding: 30px 50px;
+                                    width: 90%;
+                                    margin: 0 auto;
+                                    color: #eeeeee;
+                                    h1 {
+                                        margin-bottom: 20px;
+                                        border-bottom: 1px solid #fff;
+                                        padding-bottom: 10px;
+                                    }
+                                    p.summary {
+                                        font-size: 0.8rem;
+                                        margin-bottom: 20px;
+                                    }
+                                    ul {
+                                        width: 90%;
+                                        margin: 0 auto;
+                                        li {
+                                            font-size: 0.8rem;
+                                            list-style-type: square;
+                                            &:not(:last-child) {
+                                                margin-bottom: 5px;
+                                            }
+                                        }
+                                    }
+                                    div.demo {
+                                        width: 90%;
+                                        margin: 30px auto 0 auto;
+                                    }
+                                    div.alt-links {
+                                        margin: 35px auto;
+                                        width: 90%;
+                                        font-size: 0.9rem;
+                                        a {
+                                            display: inline-block;
+                                            color: #007fd3;
+                                            text-decoration: underline;
+                                        }
                                     }
                                 }
                             }
