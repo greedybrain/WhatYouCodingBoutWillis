@@ -24,10 +24,6 @@ img {
     width: 100%;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 // GLOBAL
 span.html-mock {
     color: #009cf7;
@@ -307,16 +303,10 @@ body {
                             }
                         }
                         div.naya-image-cont-max {
-                            // border: $glance;
                             padding: 20px;
-                            // margin-top: 10px;
                             width: 40%;
                             font-size: 1rem;
                             height: 100%;
-                            // -webkit-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
-                            // -moz-box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
-                            // box-shadow: 2px 0px 7px 0px rgba(0, 0, 0, 0.75);
-                            // align-self: center;
                             border-right: 1px solid #333;
                             img {
                                 border-radius: 5px;
@@ -340,12 +330,14 @@ body {
                         div.skills-education {
                             width: 42%;
                             padding: 20px;
+                            overflow-y: scroll;
                             h3.tech-skills-title {
                                 color: #fff;
                                 margin: 8px 0;
                             }
                             div.languages,
-                            div.library-frameworks {
+                            div.library-frameworks,
+                            div.databases {
                                 margin-top: 15px;
                                 ul {
                                     border: 3px solid #9b9b9b;
@@ -354,19 +346,25 @@ body {
                                         border-bottom: 3px solid #9b9b9b;
                                         width: 100%;
                                         padding: 10px;
+                                        i {
+                                            margin-right: 15px;
+                                        }
                                     }
                                     li {
                                         display: flex;
                                         align-items: center;
                                         margin-bottom: 10px;
                                         color: #9b9b9b;
-                                        padding-left: 15px;
-                                        padding-bottom: 8px;
+                                        padding: 8px 0 8px 15px;
                                         div.lang-logo {
-                                            width: 20px;
+                                            width: 30px;
+                                            img {
+                                                width: 100%;
+                                            }
                                         }
                                         div.lang-title {
-                                            margin-left: 8px;
+                                            margin-left: 10px;
+                                            font-size: 1.1rem;
                                         }
                                     }
                                 }
