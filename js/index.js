@@ -23,6 +23,7 @@ const nayaImageContWithCaptionMax = document.querySelector(
 const nayaImageContWithCaptionMin = document.querySelector(
     "div.naya-image-cont-min"
 );
+const skillsEducation = document.querySelector("div.skills-education");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleIconAnimation();
@@ -110,6 +111,7 @@ const handleReadmeRender = () => {
         readmePath.style.display = "block";
         nayaImageContWithCaptionMax.style.display = "block";
         nayaImageContWithCaptionMin.style.display = "block";
+        skillsEducation.style.display = "block";
 
         // turn off git stuff
         git.style.borderLeft = "none";
@@ -142,6 +144,7 @@ const handleGithubProjectsRender = () => {
         readme.style.backgroundColor = "#505050";
         nayaImageContWithCaptionMax.style.display = "none";
         nayaImageContWithCaptionMin.style.display = "none";
+        skillsEducation.style.display = "none";
 
         // turn off contact stuff
         contactMe.style.borderLeft = "none";
@@ -173,6 +176,7 @@ const handleContactRender = () => {
         readme.style.backgroundColor = "#505050";
         nayaImageContWithCaptionMax.style.display = "none";
         nayaImageContWithCaptionMin.style.display = "none";
+        skillsEducation.style.display = "none";
     });
 };
 
