@@ -368,10 +368,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
   color: #00b7ff;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head .astro {
-  color: #00c000;
-}
-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
   height: 80vh;
   overflow-y: scroll;
