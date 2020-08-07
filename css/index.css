@@ -31,7 +31,7 @@ span.html-mock {
 div.tooltip {
   color: #c9c9c9;
   z-index: 300;
-  right: 40px;
+  right: 50px;
   width: 150px;
   padding: 20px;
   border-top-left-radius: 30px;
@@ -40,6 +40,11 @@ div.tooltip {
   background-color: #3d3d3d;
   -webkit-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
   box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+div.divider {
+  margin-top: 15px;
+  color: #009b00bd;
 }
 
 ::-webkit-scrollbar {
@@ -415,6 +420,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   font-size: 1rem;
   height: 100%;
   border-right: 1px solid #333;
+  overflow-y: scroll;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max img {
@@ -437,6 +443,59 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   color: #9b9b9b;
   text-align: left;
   line-height: 1.4;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs div.fs-logo {
+  width: 30px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.fs div.fs-title {
+  color: #9b9b9b;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement {
+  color: #9b9b9b;
+  margin-top: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.ed-icon {
+  margin-right: 10px;
+  text-align: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.ed-icon i {
+  font-size: 1.2rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.award {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.doc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max div.education div.achievement div.doc div.award-date {
+  margin-left: 5px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
@@ -509,11 +568,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-title {
   margin-left: 10px;
   font-size: 1.1rem;
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.divider {
-  margin-top: 15px;
-  color: #006d00bd;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min {

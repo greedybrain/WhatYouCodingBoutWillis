@@ -36,7 +36,7 @@ span.html-mock {
 div.tooltip {
     color: #c9c9c9;
     z-index: 300;
-    right: 40px;
+    right: 50px;
     width: 150px;
     padding: 20px;
     border-top-left-radius: 30px;
@@ -46,6 +46,11 @@ div.tooltip {
     -webkit-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
+}
+
+div.divider {
+    margin-top: 15px;
+    color: #009b00bd;
 }
 
 ::-webkit-scrollbar {
@@ -327,6 +332,7 @@ body {
                             font-size: 1rem;
                             height: 100%;
                             border-right: 1px solid #333;
+                            overflow-y: scroll;
                             img {
                                 border-radius: 5px;
                                 width: 75%;
@@ -344,6 +350,42 @@ body {
                                 color: #9b9b9b;
                                 text-align: left;
                                 line-height: 1.4;
+                            }
+                            div.education {
+                                div.fs {
+                                    display: flex;
+                                    padding: 10px 0;
+                                    margin-top: 15px;
+                                    div.fs-logo {
+                                        width: 30px;
+                                    }
+                                    div.fs-title {
+                                        color: #9b9b9b;
+                                    }
+                                }
+                                div.achievement {
+                                    color: #9b9b9b;
+                                    margin-top: 20px;
+                                    div.ed-icon {
+                                        margin-right: 10px;
+                                        text-align: center;
+                                        i {
+                                            font-size: 1.2rem;
+                                        }
+                                    }
+                                    div.award {
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    div.doc {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-top: 15px;
+                                        div.award-date {
+                                            margin-left: 5px;
+                                        }
+                                    }
+                                }
                             }
                         }
                         div.skills-education {
@@ -388,10 +430,6 @@ body {
                                         }
                                     }
                                 }
-                            }
-                            div.divider {
-                                margin-top: 15px;
-                                color: #006d00bd;
                             }
                         }
                         div.naya-image-cont-min {

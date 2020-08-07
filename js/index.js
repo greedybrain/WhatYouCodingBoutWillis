@@ -29,6 +29,7 @@ divTooltip.classList.add("tooltip");
 const explorerIcons = document.querySelectorAll("ul.nav li");
 const nav = document.querySelector("ul.nav");
 const tabs = document.querySelectorAll(".tab");
+const icons = document.querySelectorAll("ul.nav i");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleIconAnimation();
@@ -36,9 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
     handleNumberListRender();
     handleTooltip();
     handleTabClick();
-    handleReadmeRender();
-    handleGithubProjectsRender();
-    handleContactRender();
+    handleTabContentRender();
+    // handleReadmeRender();
+    // handleGithubProjectsRender();
+    // handleContactRender();
 });
 
 const handleSocialIconAnimation = () => {
@@ -213,84 +215,158 @@ const handleTabClick = () => {
     });
 };
 
-const handleReadmeRender = () => {
-    user.addEventListener("click", (e) => {
-        // turn on user > readme
-        user.style.borderLeft = "2px solid #fff";
-        astronautIcon.style.color = "#fff";
-        readme.style.display = "block";
-        readme.style.backgroundColor = "#272727";
-        readmePath.style.display = "block";
-        nayaImageContWithCaptionMax.style.display = "block";
-        nayaImageContWithCaptionMin.style.display = "block";
-        skillsEducation.style.display = "block";
+const handleTabContentRender = () => {
+    Array.from(icons).forEach((icon) => {
+        icon.addEventListener("click", (e) => {
+            if (e.target.parentElement.classList.contains("user")) {
+                user.style.borderLeft = "2px solid #fff";
+                astronautIcon.style.color = "#fff";
+                readme.style.display = "block";
+                readme.style.backgroundColor = "#272727";
+                readmePath.style.display = "block";
+                nayaImageContWithCaptionMax.style.display = "block";
+                nayaImageContWithCaptionMin.style.display = "block";
+                skillsEducation.style.display = "block";
 
-        // turn off git stuff
-        git.style.borderLeft = "none";
-        gitIcon.style.color = "#7e7e7e";
-        gitProjects.style.backgroundColor = "#505050";
-        projectsPath.style.display = "none";
+                // turn off git stuff
+                git.style.borderLeft = "none";
+                gitIcon.style.color = "#7e7e7e";
+                gitProjects.style.backgroundColor = "#505050";
+                projectsPath.style.display = "none";
 
-        // turn off contact stuff
-        contactMe.style.borderLeft = "none";
-        contactIcon.style.color = "#7e7e7e";
-        contactPath.style.display = " none";
-        contact.style.backgroundColor = "#505050";
+                // turn off contact stuff
+                contactMe.style.borderLeft = "none";
+                contactIcon.style.color = "#7e7e7e";
+                contactPath.style.display = " none";
+                contact.style.backgroundColor = "#505050";
+            } else if (e.target.parentElement.classList.contains("git")) {
+                // turn on user > projects
+                git.style.borderLeft = "2px solid #fff";
+                gitIcon.style.color = "#fff";
+                gitProjects.style.display = "block";
+                gitProjects.style.backgroundColor = "#272727";
+                projectsPath.style.display = "block";
+
+                //turn off user stuff
+                user.style.borderLeft = "none";
+                astronautIcon.style.color = "#7e7e7e";
+                readme.style.display = "block";
+                readmePath.style.display = "none";
+                readme.style.backgroundColor = "#505050";
+                nayaImageContWithCaptionMax.style.display = "none";
+                nayaImageContWithCaptionMin.style.display = "none";
+                skillsEducation.style.display = "none";
+
+                // turn off contact stuff
+                contactMe.style.borderLeft = "none";
+                contactIcon.style.color = "#7e7e7e";
+                contactPath.style.display = " none";
+                contact.style.backgroundColor = "#505050";
+            } else if (e.target.parentElement.classList.contains("contact-me")) {
+                contactMe.style.borderLeft = "2px solid #fff";
+                contactIcon.style.color = "#fff";
+                contact.style.display = "block";
+                contact.style.backgroundColor = "#272727";
+                contactPath.style.display = "block";
+
+                // turn off project stuff
+                git.style.borderLeft = "none";
+                gitIcon.style.color = "#7e7e7e";
+                gitProjects.style.backgroundColor = "#505050";
+                projectsPath.style.display = "none";
+
+                // turn off user
+                user.style.borderLeft = "none";
+                astronautIcon.style.color = "#7e7e7e";
+                readme.style.display = "block";
+                readmePath.style.display = "none";
+                readme.style.backgroundColor = "#505050";
+                nayaImageContWithCaptionMax.style.display = "none";
+                nayaImageContWithCaptionMin.style.display = "none";
+                skillsEducation.style.display = "none";
+            }
+        });
     });
 };
 
-const handleGithubProjectsRender = () => {
-    git.addEventListener("click", (e) => {
-        // turn on user > projects
-        git.style.borderLeft = "2px solid #fff";
-        gitIcon.style.color = "#fff";
-        gitProjects.style.display = "block";
-        gitProjects.style.backgroundColor = "#272727";
-        projectsPath.style.display = "block";
+// const handleReadmeRender = () => {
+//     user.addEventListener("click", (e) => {
+//         // turn on user > readme
+//         user.style.borderLeft = "2px solid #fff";
+//         astronautIcon.style.color = "#fff";
+//         readme.style.display = "block";
+//         readme.style.backgroundColor = "#272727";
+//         readmePath.style.display = "block";
+//         nayaImageContWithCaptionMax.style.display = "block";
+//         nayaImageContWithCaptionMin.style.display = "block";
+//         skillsEducation.style.display = "block";
 
-        //turn off user stuff
-        user.style.borderLeft = "none";
-        astronautIcon.style.color = "#7e7e7e";
-        readme.style.display = "block";
-        readmePath.style.display = "none";
-        readme.style.backgroundColor = "#505050";
-        nayaImageContWithCaptionMax.style.display = "none";
-        nayaImageContWithCaptionMin.style.display = "none";
-        skillsEducation.style.display = "none";
+//         // turn off git stuff
+//         git.style.borderLeft = "none";
+//         gitIcon.style.color = "#7e7e7e";
+//         gitProjects.style.backgroundColor = "#505050";
+//         projectsPath.style.display = "none";
 
-        // turn off contact stuff
-        contactMe.style.borderLeft = "none";
-        contactIcon.style.color = "#7e7e7e";
-        contactPath.style.display = " none";
-        contact.style.backgroundColor = "#505050";
-    });
-};
+//         // turn off contact stuff
+//         contactMe.style.borderLeft = "none";
+//         contactIcon.style.color = "#7e7e7e";
+//         contactPath.style.display = " none";
+//         contact.style.backgroundColor = "#505050";
+//     });
+// };
 
-const handleContactRender = () => {
-    contactMe.addEventListener("click", (e) => {
-        contactMe.style.borderLeft = "2px solid #fff";
-        contactIcon.style.color = "#fff";
-        contact.style.display = "block";
-        contact.style.backgroundColor = "#272727";
-        contactPath.style.display = "block";
+// const handleGithubProjectsRender = () => {
+//     git.addEventListener("click", (e) => {
+//         // turn on user > projects
+//         git.style.borderLeft = "2px solid #fff";
+//         gitIcon.style.color = "#fff";
+//         gitProjects.style.display = "block";
+//         gitProjects.style.backgroundColor = "#272727";
+//         projectsPath.style.display = "block";
 
-        // turn off project stuff
-        git.style.borderLeft = "none";
-        gitIcon.style.color = "#7e7e7e";
-        gitProjects.style.backgroundColor = "#505050";
-        projectsPath.style.display = "none";
+//         //turn off user stuff
+//         user.style.borderLeft = "none";
+//         astronautIcon.style.color = "#7e7e7e";
+//         readme.style.display = "block";
+//         readmePath.style.display = "none";
+//         readme.style.backgroundColor = "#505050";
+//         nayaImageContWithCaptionMax.style.display = "none";
+//         nayaImageContWithCaptionMin.style.display = "none";
+//         skillsEducation.style.display = "none";
 
-        // turn off user
-        user.style.borderLeft = "none";
-        astronautIcon.style.color = "#7e7e7e";
-        readme.style.display = "block";
-        readmePath.style.display = "none";
-        readme.style.backgroundColor = "#505050";
-        nayaImageContWithCaptionMax.style.display = "none";
-        nayaImageContWithCaptionMin.style.display = "none";
-        skillsEducation.style.display = "none";
-    });
-};
+//         // turn off contact stuff
+//         contactMe.style.borderLeft = "none";
+//         contactIcon.style.color = "#7e7e7e";
+//         contactPath.style.display = " none";
+//         contact.style.backgroundColor = "#505050";
+//     });
+// };
+
+// const handleContactRender = () => {
+//     contactMe.addEventListener("click", (e) => {
+//         contactMe.style.borderLeft = "2px solid #fff";
+//         contactIcon.style.color = "#fff";
+//         contact.style.display = "block";
+//         contact.style.backgroundColor = "#272727";
+//         contactPath.style.display = "block";
+
+//         // turn off project stuff
+//         git.style.borderLeft = "none";
+//         gitIcon.style.color = "#7e7e7e";
+//         gitProjects.style.backgroundColor = "#505050";
+//         projectsPath.style.display = "none";
+
+//         // turn off user
+//         user.style.borderLeft = "none";
+//         astronautIcon.style.color = "#7e7e7e";
+//         readme.style.display = "block";
+//         readmePath.style.display = "none";
+//         readme.style.backgroundColor = "#505050";
+//         nayaImageContWithCaptionMax.style.display = "none";
+//         nayaImageContWithCaptionMin.style.display = "none";
+//         skillsEducation.style.display = "none";
+//     });
+// };
 
 //! HELPERS
 
