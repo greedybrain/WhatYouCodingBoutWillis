@@ -28,12 +28,14 @@ const divTooltip = document.createElement("div");
 divTooltip.classList.add("tooltip");
 const explorerIcons = document.querySelectorAll("ul.nav li");
 const nav = document.querySelector("ul.nav");
+const tabs = document.querySelectorAll(".tab");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleIconAnimation();
     handleRemoveLandingPageThenShowPortfolio();
     handleNumberListRender();
     handleTooltip();
+    handleTabClick();
     handleReadmeRender();
     handleGithubProjectsRender();
     handleContactRender();
@@ -133,6 +135,80 @@ const handleTooltip = () => {
         });
         icon.addEventListener("mouseleave", () => {
             divTooltip.style.display = "none";
+        });
+    });
+};
+
+const handleTabClick = () => {
+    Array.from(tabs).forEach((tab) => {
+        tab.addEventListener("click", (e) => {
+            if (e.target.classList.contains("readme")) {
+                user.style.borderLeft = "2px solid #fff";
+                astronautIcon.style.color = "#fff";
+                readme.style.display = "block";
+                readme.style.backgroundColor = "#272727";
+                readmePath.style.display = "block";
+                nayaImageContWithCaptionMax.style.display = "block";
+                nayaImageContWithCaptionMin.style.display = "block";
+                skillsEducation.style.display = "block";
+
+                // turn off git stuff
+                git.style.borderLeft = "none";
+                gitIcon.style.color = "#7e7e7e";
+                gitProjects.style.backgroundColor = "#505050";
+                projectsPath.style.display = "none";
+
+                // turn off contact stuff
+                contactMe.style.borderLeft = "none";
+                contactIcon.style.color = "#7e7e7e";
+                contactPath.style.display = " none";
+                contact.style.backgroundColor = "#505050";
+            } else if (e.target.classList.contains("git-projects")) {
+                // turn on user > projects
+                git.style.borderLeft = "2px solid #fff";
+                gitIcon.style.color = "#fff";
+                gitProjects.style.display = "block";
+                gitProjects.style.backgroundColor = "#272727";
+                projectsPath.style.display = "block";
+
+                //turn off user stuff
+                user.style.borderLeft = "none";
+                astronautIcon.style.color = "#7e7e7e";
+                readme.style.display = "block";
+                readmePath.style.display = "none";
+                readme.style.backgroundColor = "#505050";
+                nayaImageContWithCaptionMax.style.display = "none";
+                nayaImageContWithCaptionMin.style.display = "none";
+                skillsEducation.style.display = "none";
+
+                // turn off contact stuff
+                contactMe.style.borderLeft = "none";
+                contactIcon.style.color = "#7e7e7e";
+                contactPath.style.display = " none";
+                contact.style.backgroundColor = "#505050";
+            } else if (e.target.classList.contains("contact")) {
+                contactMe.style.borderLeft = "2px solid #fff";
+                contactIcon.style.color = "#fff";
+                contact.style.display = "block";
+                contact.style.backgroundColor = "#272727";
+                contactPath.style.display = "block";
+
+                // turn off project stuff
+                git.style.borderLeft = "none";
+                gitIcon.style.color = "#7e7e7e";
+                gitProjects.style.backgroundColor = "#505050";
+                projectsPath.style.display = "none";
+
+                // turn off user
+                user.style.borderLeft = "none";
+                astronautIcon.style.color = "#7e7e7e";
+                readme.style.display = "block";
+                readmePath.style.display = "none";
+                readme.style.backgroundColor = "#505050";
+                nayaImageContWithCaptionMax.style.display = "none";
+                nayaImageContWithCaptionMin.style.display = "none";
+                skillsEducation.style.display = "none";
+            }
         });
     });
 };
