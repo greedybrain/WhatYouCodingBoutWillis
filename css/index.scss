@@ -4,6 +4,7 @@ $medDarkBg: #3d3d3d;
 $lightGray: #424242;
 $iconColor: #7e7e7e;
 $glance: 1px solid #fff;
+$fontColor: #9b9b9b;
 // GLOBAL
 * {
     margin: 0;
@@ -17,7 +18,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #b8b8b8;
+    color: $fontColor;
+}
+
+.important-link {
+    text-decoration: underline;
 }
 
 img {
@@ -258,13 +263,13 @@ body {
                                 }
                             }
                             li.git-projects {
-                                display: none;
+                                // display: none;
                                 i {
                                     color: #00b7ff;
                                 }
                             }
                             li.contact {
-                                display: none;
+                                // display: none;
                                 i {
                                     color: #00b7ff;
                                 }
@@ -421,6 +426,51 @@ body {
                                             margin-left: 10px;
                                             font-size: 1.1rem;
                                         }
+                                    }
+                                }
+                            }
+                        }
+                        div.my-projects {
+                            display: none;
+                            width: 100%;
+                            div.project {
+                                div.project-head {
+                                    display: flex;
+                                    align-items: center;
+                                    padding: 20px 20px 60px 20px;
+                                    color: $fontColor;
+                                    -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+                                    -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+                                    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+                                    div.app-logo {
+                                        margin-right: 15px;
+                                    }
+                                    div.project-about {
+                                        div.head-content {
+                                            ul.misc {
+                                                display: flex;
+                                                align-items: center;
+                                                margin: 3px 0;
+                                                li {
+                                                    &:not(:last-child) {
+                                                        margin-right: 5px;
+                                                    }
+                                                }
+                                                li.downloads {
+                                                    font-size: 0.8rem;
+                                                }
+                                                li.rating {
+                                                    font-size: 0.7rem;
+                                                }
+                                            }
+                                            p.one-liner {
+                                                font-size: 0.9rem;
+                                            }
+                                        }
+                                    }
+                                    span {
+                                        font-size: 0.9rem;
+                                        margin-left: 5px;
                                     }
                                 }
                             }

@@ -30,6 +30,8 @@ const explorerIcons = document.querySelectorAll("ul.nav li");
 const nav = document.querySelector("ul.nav");
 const tabs = document.querySelectorAll(".tab");
 const icons = document.querySelectorAll("ul.nav i");
+const myProjectsContainer = document.querySelector("div.my-projects");
+const lineNumbers = document.querySelector("div.line-numbers");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleIconAnimation();
@@ -89,7 +91,7 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
         }, 500);
         setTimeout(() => {
             landingPage.style.display = "none";
-            wrapper.style.minWidth = "1200px";
+            wrapper.style.minWidth = "1300px";
             wrapper.style.maxWidth = "1200px";
             editorSimulation.style.display = "block";
             handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
@@ -159,6 +161,7 @@ const handleTabClick = () => {
                 gitIcon.style.color = "#7e7e7e";
                 gitProjects.style.backgroundColor = "#505050";
                 projectsPath.style.display = "none";
+                myProjectsContainer.style.display = "none";
 
                 // turn off contact stuff
                 contactMe.style.borderLeft = "none";
@@ -172,6 +175,8 @@ const handleTabClick = () => {
                 gitProjects.style.display = "block";
                 gitProjects.style.backgroundColor = "#272727";
                 projectsPath.style.display = "block";
+                myProjectsContainer.style.display = "block";
+                lineNumbers.style.display = "none";
 
                 //turn off user stuff
                 user.style.borderLeft = "none";
@@ -200,6 +205,7 @@ const handleTabClick = () => {
                 gitIcon.style.color = "#7e7e7e";
                 gitProjects.style.backgroundColor = "#505050";
                 projectsPath.style.display = "none";
+                myProjectsContainer.style.display = "none";
 
                 // turn off user
                 user.style.borderLeft = "none";
@@ -233,6 +239,7 @@ const handleTabContentRender = () => {
                 gitIcon.style.color = "#7e7e7e";
                 gitProjects.style.backgroundColor = "#505050";
                 projectsPath.style.display = "none";
+                myProjectsContainer.style.display = "none";
 
                 // turn off contact stuff
                 contactMe.style.borderLeft = "none";
@@ -246,6 +253,8 @@ const handleTabContentRender = () => {
                 gitProjects.style.display = "block";
                 gitProjects.style.backgroundColor = "#272727";
                 projectsPath.style.display = "block";
+                myProjectsContainer.style.display = "block";
+                lineNumbers.style.display = "none";
 
                 //turn off user stuff
                 user.style.borderLeft = "none";
@@ -274,6 +283,7 @@ const handleTabContentRender = () => {
                 gitIcon.style.color = "#7e7e7e";
                 gitProjects.style.backgroundColor = "#505050";
                 projectsPath.style.display = "none";
+                myProjectsContainer.style.display = "none";
 
                 // turn off user
                 user.style.borderLeft = "none";
