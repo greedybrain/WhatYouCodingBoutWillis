@@ -24,6 +24,14 @@ img {
   display: none;
 }
 
+span.html-mock {
+  color: #009cf7;
+}
+
+.angle {
+  color: #888888;
+}
+
 body {
   background-position: center;
   background-size: cover;
@@ -70,7 +78,7 @@ body div.wrapper div.landing div.menu-bar {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: #ffffffce;
+  background-color: rgba(51, 51, 51, 0.801);
   height: 3vh;
 }
 
@@ -88,7 +96,7 @@ body div.wrapper div.landing div.menu-bar ul {
 body div.wrapper div.landing div.menu-bar ul li {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8rem;
-  color: #000;
+  color: #fff;
 }
 
 body div.wrapper div.landing div.menu-bar ul li:not(:first-child) {
@@ -260,6 +268,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
   position: relative;
+  width: 100%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
@@ -410,19 +419,68 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   text-align: left;
 }
 
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max span.html-mock {
-  color: #009cf7;
-}
-
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max .angle {
-  color: #888888;
-}
-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max p.about {
   color: #9b9b9b;
   text-align: left;
   line-height: 1.4;
-  padding-bottom: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
+  width: 42%;
+  padding: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education h3.tech-skills-title {
+  color: #fff;
+  margin: 8px 0;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks {
+  margin-top: 15px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul {
+  border: 3px solid #9b9b9b;
+  border-radius: 10px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title {
+  border-bottom: 3px solid #9b9b9b;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+  color: #9b9b9b;
+  padding-left: 15px;
+  padding-bottom: 8px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-logo,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-logo {
+  width: 20px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-title {
+  margin-left: 8px;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.divider {
+  margin-top: 15px;
+  color: #006d00bd;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-min {
@@ -465,6 +523,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.footer {
+  width: 100%;
   height: 2.2vh;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;

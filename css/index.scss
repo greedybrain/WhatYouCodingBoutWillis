@@ -28,6 +28,15 @@ img {
     display: none;
 }
 
+// GLOBAL
+span.html-mock {
+    color: #009cf7;
+}
+
+.angle {
+    color: #888888;
+}
+
 body {
     background-position: center;
     background-size: cover;
@@ -55,7 +64,7 @@ body {
                 position: absolute;
                 top: 0;
                 width: 100%;
-                background-color: #ffffffce;
+                background-color: rgba(51, 51, 51, 0.801);
                 height: 3vh;
                 ul {
                     display: flex;
@@ -65,7 +74,7 @@ body {
                     li {
                         font-family: Arial, Helvetica, sans-serif;
                         font-size: 0.8rem;
-                        color: #000;
+                        color: #fff;
                         &:not(:first-child) {
                             margin-left: 15px;
                         }
@@ -197,7 +206,7 @@ body {
                 }
                 div.edit {
                     position: relative;
-                    // width: 100%;
+                    width: 100%;
                     div.edit-head {
                         ul {
                             display: flex;
@@ -322,17 +331,50 @@ body {
                                     text-align: left;
                                 }
                             }
-                            span.html-mock {
-                                color: #009cf7;
-                            }
-                            .angle {
-                                color: #888888;
-                            }
                             p.about {
                                 color: #9b9b9b;
                                 text-align: left;
                                 line-height: 1.4;
-                                padding-bottom: 20px;
+                            }
+                        }
+                        div.skills-education {
+                            width: 42%;
+                            padding: 20px;
+                            h3.tech-skills-title {
+                                color: #fff;
+                                margin: 8px 0;
+                            }
+                            div.languages,
+                            div.library-frameworks {
+                                margin-top: 15px;
+                                ul {
+                                    border: 3px solid #9b9b9b;
+                                    border-radius: 10px;
+                                    li.sub-title {
+                                        border-bottom: 3px solid #9b9b9b;
+                                        width: 100%;
+                                        padding: 10px;
+                                        border: 1px solid red;
+                                    }
+                                    li {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 10px;
+                                        color: #9b9b9b;
+                                        padding-left: 15px;
+                                        padding-bottom: 8px;
+                                        div.lang-logo {
+                                            width: 20px;
+                                        }
+                                        div.lang-title {
+                                            margin-left: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                            div.divider {
+                                margin-top: 15px;
+                                color: #006d00bd;
                             }
                         }
                         div.naya-image-cont-min {
@@ -387,6 +429,7 @@ body {
                         }
                     }
                     div.footer {
+                        width: 100%;
                         height: 2.2vh;
                         border-bottom-left-radius: 5px;
                         border-bottom-right-radius: 5px;
