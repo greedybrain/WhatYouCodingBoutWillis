@@ -423,6 +423,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
   width: 42%;
+  height: 98%;
   padding: 20px;
   overflow-y: scroll;
 }
@@ -441,14 +442,14 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul {
-  border: 3px solid #9b9b9b;
+  border: 1px solid #9b9b9b;
   border-radius: 10px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title {
-  border-bottom: 3px solid #9b9b9b;
+  border-bottom: 1px solid #9b9b9b;
   width: 100%;
   padding: 10px;
 }

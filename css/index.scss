@@ -329,6 +329,7 @@ body {
                         }
                         div.skills-education {
                             width: 42%;
+                            height: 98%;
                             padding: 20px;
                             overflow-y: scroll;
                             h3.tech-skills-title {
@@ -340,10 +341,10 @@ body {
                             div.databases {
                                 margin-top: 15px;
                                 ul {
-                                    border: 3px solid #9b9b9b;
+                                    border: 1px solid #9b9b9b;
                                     border-radius: 10px;
                                     li.sub-title {
-                                        border-bottom: 3px solid #9b9b9b;
+                                        border-bottom: 1px solid #9b9b9b;
                                         width: 100%;
                                         padding: 10px;
                                         i {
