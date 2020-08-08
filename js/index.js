@@ -82,7 +82,7 @@ const handleReRenderIfVisitedAlready = () => {
         "/images/desktop-b5.jpeg",
     ];
     let randBg = innyMinnyMineyMo(desktopBgs);
-    if (localStorage.url) {
+    if (localStorage.url === "http://whatyoucodingboutwillis.com/") {
         landingPage.style.display = "none";
         wrapper.style.minWidth = "1300px";
         wrapper.style.maxWidth = "1200px";
