@@ -32,6 +32,7 @@ const tabs = document.querySelectorAll(".tab");
 const icons = document.querySelectorAll("ul.nav i");
 const myProjectsContainer = document.querySelector("div.my-projects");
 const lineNumbers = document.querySelector("div.line-numbers");
+const arrow = document.querySelector("div.arrow i");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleReRenderIfVisitedAlready();
@@ -41,9 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     handleTooltip();
     handleTabClick();
     handleTabContentRender();
-    // handleReadmeRender();
-    // handleGithubProjectsRender();
-    // handleContactRender();
+    handleArrowAnimation();
+    handleStopArrowAnimation();
 });
 
 const handleSocialIconAnimation = () => {
@@ -56,6 +56,21 @@ const handleSocialIconAnimation = () => {
         }, time);
         time += 250;
     });
+};
+
+const handleArrowAnimation = () => {
+    handleAnimation(arrow, "animate__slideInDown", "animate__infinite");
+};
+
+const handleStopArrowAnimation = () => {
+    skillsEducation.addEventListener("scroll", () => {
+        if (skillsEducation.scrollTop > 650) {
+            handleClearingAnimation(arrow);
+        } else {
+            handleArrowAnimation();
+        }
+    });
+    // console.log(skillsEducation.scrollTop);
 };
 
 //todo handling vscodeIcon animation

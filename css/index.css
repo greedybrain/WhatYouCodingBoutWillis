@@ -510,8 +510,9 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
   width: 42%;
   height: 98%;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   overflow-y: scroll;
+  position: relative;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education h3.tech-skills-title {
@@ -586,6 +587,21 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-title {
   margin-left: 10px;
   font-size: 1.1rem;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.arrow {
+  text-align: center;
+  margin-top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 300;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.arrow i {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.651);
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.my-projects {
