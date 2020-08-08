@@ -398,7 +398,8 @@ body {
                             }
                             div.languages,
                             div.library-frameworks,
-                            div.databases {
+                            div.databases,
+                            div.deployment {
                                 margin-top: 15px;
                                 ul {
                                     border: 1px solid #9b9b9b;
@@ -439,7 +440,7 @@ body {
                                 div.project-head {
                                     display: flex;
                                     align-items: center;
-                                    padding: 20px 20px 60px 20px;
+                                    padding: 20px 25px 60px 25px;
                                     color: #eeeeee;
                                     -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
                                     -moz-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);

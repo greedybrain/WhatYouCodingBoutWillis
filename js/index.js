@@ -34,6 +34,7 @@ const myProjectsContainer = document.querySelector("div.my-projects");
 const lineNumbers = document.querySelector("div.line-numbers");
 
 document.addEventListener("DOMContentLoaded", () => {
+    handleReRenderIfVisitedAlready();
     handleIconAnimation();
     handleRemoveLandingPageThenShowPortfolio();
     handleNumberListRender();
@@ -71,6 +72,28 @@ const handleIconAnimation = () => {
             "animate__infinite"
         );
     });
+};
+
+const handleReRenderIfVisitedAlready = () => {
+    const desktopBgs = [
+        "/images/desktop-b2.jpeg",
+        "/images/desktop-b3.jpeg",
+        "/images/desktop-b4.jpeg",
+        "/images/desktop-b5.jpeg",
+    ];
+    let randBg = innyMinnyMineyMo(desktopBgs);
+
+    if (localStorage.url) {
+        landingPage.style.display = "none";
+        wrapper.style.minWidth = "1300px";
+        wrapper.style.maxWidth = "1200px";
+        editorSimulation.style.display = "block";
+        handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
+        document.body.style.backgroundImage = `url('${randBg}')`;
+        handleSocialIconAnimation();
+    } else {
+        localStorage.setItem("url", window.location.href);
+    }
 };
 
 const handleRemoveLandingPageThenShowPortfolio = () => {

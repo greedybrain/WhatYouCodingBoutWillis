@@ -501,20 +501,23 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment {
   margin-top: 15px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul {
   border: 1px solid #9b9b9b;
   border-radius: 10px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li.sub-title {
   border-bottom: 1px solid #9b9b9b;
   width: 100%;
   padding: 10px;
@@ -523,13 +526,15 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li.sub-title i,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li.sub-title i,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title i {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li.sub-title i,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li.sub-title i {
   margin-right: 15px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,19 +548,22 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-logo,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-logo,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-logo {
   width: 30px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-logo img,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-logo img,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo img {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-logo img,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-logo img {
   width: 100%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.languages ul li div.lang-title,
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.library-frameworks ul li div.lang-title,
-body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-title {
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.databases ul li div.lang-title,
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education div.deployment ul li div.lang-title {
   margin-left: 10px;
   font-size: 1.1rem;
 }
@@ -572,7 +580,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 20px 60px 20px;
+  padding: 20px 25px 60px 25px;
   color: #eeeeee;
   -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
