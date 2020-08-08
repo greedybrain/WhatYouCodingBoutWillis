@@ -82,7 +82,6 @@ const handleReRenderIfVisitedAlready = () => {
         "/images/desktop-b5.jpeg",
     ];
     let randBg = innyMinnyMineyMo(desktopBgs);
-
     if (localStorage.url) {
         landingPage.style.display = "none";
         wrapper.style.minWidth = "1300px";

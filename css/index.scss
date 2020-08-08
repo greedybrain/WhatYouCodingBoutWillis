@@ -204,6 +204,9 @@ body {
                                 color: #fff;
                             }
                         }
+                        li.contact-me {
+                            display: none;
+                        }
                     }
                     div.social {
                         ul.social-nav {
@@ -270,7 +273,7 @@ body {
                                 }
                             }
                             li.contact {
-                                // display: none;
+                                display: none;
                                 i {
                                     color: #00b7ff;
                                 }

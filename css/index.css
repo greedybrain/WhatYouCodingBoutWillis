@@ -265,6 +265,10 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav
   color: #fff;
 }
 
+body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer ul.nav li.contact-me {
+  display: none;
+}
+
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.social ul.social-nav li {
   display: none;
   text-align: center;
@@ -335,6 +339,10 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.git-projects i {
   color: #00b7ff;
+}
+
+body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.contact {
+  display: none;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul li.contact i {
