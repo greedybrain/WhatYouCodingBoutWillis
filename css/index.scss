@@ -59,6 +59,10 @@ div.divider {
     color: #009b00bd;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     background-position: center;
     background-size: cover;
