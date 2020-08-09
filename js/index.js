@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     handleTabClick();
     handleTabContentRender();
     handleArrowAnimation();
-    handleStopArrowAnimation();
 });
 
 const handleSocialIconAnimation = () => {
@@ -59,18 +58,13 @@ const handleSocialIconAnimation = () => {
 };
 
 const handleArrowAnimation = () => {
-    handleAnimation(arrow, "animate__slideInDown", "animate__infinite");
-};
-
-const handleStopArrowAnimation = () => {
     skillsEducation.addEventListener("scroll", () => {
-        if (skillsEducation.scrollTop > 650) {
+        if (skillsEducation.scrollTop > 500) {
             handleClearingAnimation(arrow);
         } else {
-            handleArrowAnimation();
+            handleAnimation(arrow, "animate__slideInDown", "animate__infinite");
         }
     });
-    // console.log(skillsEducation.scrollTop);
 };
 
 //todo handling vscodeIcon animation
