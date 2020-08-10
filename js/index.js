@@ -62,20 +62,11 @@ const handleIconAnimation = () => {
 };
 
 const handleReRenderIfVisitedAlready = () => {
-    const desktopBgs = [
-        "/images/desktop-b2.jpeg",
-        "/images/desktop-b3.jpeg",
-        "/images/desktop-b4.jpeg",
-        "/images/desktop-b5.jpeg",
-    ];
-    let randBg = innyMinnyMineyMo(desktopBgs);
     if (localStorage.url === "http://whatyoucodingboutwillis.com/") {
         landingPage.style.display = "none";
-        wrapper.style.minWidth = "1200px";
-        wrapper.style.maxWidth = "1200px";
+        // wrapper.style.minWidth = "1200px";
         editorSimulation.style.display = "block";
         handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
-        document.body.style.backgroundImage = `url('${randBg}')`;
         handleSocialIconAnimation();
     } else {
         localStorage.setItem("url", window.location.href);
@@ -105,25 +96,17 @@ const handleArrowAnimation = () => {
 };
 
 const handleRemoveLandingPageThenShowPortfolio = () => {
-    const desktopBgs = [
-        "/images/desktop-b2.jpeg",
-        "/images/desktop-b3.jpeg",
-        "/images/desktop-b4.jpeg",
-        "/images/desktop-b5.jpeg",
-    ];
-    let randBg = innyMinnyMineyMo(desktopBgs);
     vscodeIcon.addEventListener("click", () => {
         handleAnimation(menuBar, "animate__fadeOut", "animate__faster");
         setTimeout(() => {
             handleAnimation(vscodeIcon, "animate__fadeOut");
             vscodeIcon.style.display = "none";
-            document.body.style.backgroundImage = `url('${randBg}')`;
             handleSocialIconAnimation();
         }, 500);
         setTimeout(() => {
             landingPage.style.display = "none";
-            wrapper.style.minWidth = "1000px";
-            wrapper.style.maxWidth = "1000px";
+            // wrapper.style.minWidth = "1000px";
+            // wrapper.style.maxWidth = "1000px";
             editorSimulation.style.display = "block";
             handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
         }, 1000);
