@@ -71,7 +71,7 @@ const handleReRenderIfVisitedAlready = () => {
     let randBg = innyMinnyMineyMo(desktopBgs);
     if (localStorage.url === "http://whatyoucodingboutwillis.com/") {
         landingPage.style.display = "none";
-        wrapper.style.minWidth = "1300px";
+        wrapper.style.minWidth = "1200px";
         wrapper.style.maxWidth = "1200px";
         editorSimulation.style.display = "block";
         handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
@@ -169,6 +169,9 @@ const handleTooltip = () => {
             }
         });
         icon.addEventListener("mouseleave", () => {
+            divTooltip.style.display = "none";
+        });
+        divTooltip.addEventListener("mouseenter", () => {
             divTooltip.style.display = "none";
         });
     });
@@ -330,85 +333,6 @@ const handleTabContentRender = () => {
     });
 };
 
-// const handleReadmeRender = () => {
-//     user.addEventListener("click", (e) => {
-//         // turn on user > readme
-//         user.style.borderLeft = "2px solid #fff";
-//         astronautIcon.style.color = "#fff";
-//         readme.style.display = "block";
-//         readme.style.backgroundColor = "#272727";
-//         readmePath.style.display = "block";
-//         nayaImageContWithCaptionMax.style.display = "block";
-//         nayaImageContWithCaptionMin.style.display = "block";
-//         skillsEducation.style.display = "block";
-
-//         // turn off git stuff
-//         git.style.borderLeft = "none";
-//         gitIcon.style.color = "#7e7e7e";
-//         gitProjects.style.backgroundColor = "#505050";
-//         projectsPath.style.display = "none";
-
-//         // turn off contact stuff
-//         contactMe.style.borderLeft = "none";
-//         contactIcon.style.color = "#7e7e7e";
-//         contactPath.style.display = " none";
-//         contact.style.backgroundColor = "#505050";
-//     });
-// };
-
-// const handleGithubProjectsRender = () => {
-//     git.addEventListener("click", (e) => {
-//         // turn on user > projects
-//         git.style.borderLeft = "2px solid #fff";
-//         gitIcon.style.color = "#fff";
-//         gitProjects.style.display = "block";
-//         gitProjects.style.backgroundColor = "#272727";
-//         projectsPath.style.display = "block";
-
-//         //turn off user stuff
-//         user.style.borderLeft = "none";
-//         astronautIcon.style.color = "#7e7e7e";
-//         readme.style.display = "block";
-//         readmePath.style.display = "none";
-//         readme.style.backgroundColor = "#505050";
-//         nayaImageContWithCaptionMax.style.display = "none";
-//         nayaImageContWithCaptionMin.style.display = "none";
-//         skillsEducation.style.display = "none";
-
-//         // turn off contact stuff
-//         contactMe.style.borderLeft = "none";
-//         contactIcon.style.color = "#7e7e7e";
-//         contactPath.style.display = " none";
-//         contact.style.backgroundColor = "#505050";
-//     });
-// };
-
-// const handleContactRender = () => {
-//     contactMe.addEventListener("click", (e) => {
-//         contactMe.style.borderLeft = "2px solid #fff";
-//         contactIcon.style.color = "#fff";
-//         contact.style.display = "block";
-//         contact.style.backgroundColor = "#272727";
-//         contactPath.style.display = "block";
-
-//         // turn off project stuff
-//         git.style.borderLeft = "none";
-//         gitIcon.style.color = "#7e7e7e";
-//         gitProjects.style.backgroundColor = "#505050";
-//         projectsPath.style.display = "none";
-
-//         // turn off user
-//         user.style.borderLeft = "none";
-//         astronautIcon.style.color = "#7e7e7e";
-//         readme.style.display = "block";
-//         readmePath.style.display = "none";
-//         readme.style.backgroundColor = "#505050";
-//         nayaImageContWithCaptionMax.style.display = "none";
-//         nayaImageContWithCaptionMin.style.display = "none";
-//         skillsEducation.style.display = "none";
-//     });
-// };
-
 //! HELPERS
 
 //todo start and customize animations
@@ -430,9 +354,3 @@ const handleClearingAnimation = (element, effect) => {
 const innyMinnyMineyMo = (arr) => {
     return arr[Math.floor(Math.random() * arr.length)];
 };
-
-// li.user {
-//     i {
-//         color: #fff;
-//     }
-// }

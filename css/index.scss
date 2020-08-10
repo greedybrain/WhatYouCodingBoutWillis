@@ -42,12 +42,12 @@ span.html-mock {
 div.tooltip {
     color: #c9c9c9;
     z-index: 300;
-    right: 50px;
+    left: 45px;
     width: 150px;
     padding: 20px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
     background-color: $medDarkBg;
     -webkit-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 4px 12px -2px rgba(0, 0, 0, 0.75);
