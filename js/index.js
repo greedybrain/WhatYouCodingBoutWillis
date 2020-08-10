@@ -45,28 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     handleArrowAnimation();
 });
 
-const handleSocialIconAnimation = () => {
-    let time = 700;
-    let icons = Array.from(socialIcons).reverse();
-    icons.forEach((icon) => {
-        setTimeout(() => {
-            icon.style.display = "block";
-            handleAnimation(icon, "animate__bounceInDown");
-        }, time);
-        time += 250;
-    });
-};
-
-const handleArrowAnimation = () => {
-    skillsEducation.addEventListener("scroll", () => {
-        if (skillsEducation.scrollTop > 500) {
-            handleClearingAnimation(arrow);
-        } else {
-            handleAnimation(arrow, "animate__slideInDown", "animate__infinite");
-        }
-    });
-};
-
 //todo handling vscodeIcon animation
 
 const handleIconAnimation = () => {
@@ -104,6 +82,28 @@ const handleReRenderIfVisitedAlready = () => {
     }
 };
 
+const handleSocialIconAnimation = () => {
+    let time = 700;
+    let icons = Array.from(socialIcons).reverse();
+    icons.forEach((icon) => {
+        setTimeout(() => {
+            icon.style.display = "block";
+            handleAnimation(icon, "animate__bounceInDown");
+        }, time);
+        time += 250;
+    });
+};
+
+const handleArrowAnimation = () => {
+    skillsEducation.addEventListener("scroll", () => {
+        if (skillsEducation.scrollTop > 500) {
+            handleAnimation(arrow, "animate__slideInUp", "animate_infinite");
+        } else {
+            handleAnimation(arrow, "animate__slideInDown", "animate_infinite");
+        }
+    });
+};
+
 const handleRemoveLandingPageThenShowPortfolio = () => {
     const desktopBgs = [
         "/images/desktop-b2.jpeg",
@@ -122,8 +122,8 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
         }, 500);
         setTimeout(() => {
             landingPage.style.display = "none";
-            wrapper.style.minWidth = "1300px";
-            wrapper.style.maxWidth = "1200px";
+            wrapper.style.minWidth = "1000px";
+            wrapper.style.maxWidth = "1000px";
             editorSimulation.style.display = "block";
             handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
         }, 1000);
@@ -422,8 +422,8 @@ const handleAnimation = (element, effect, speed = null, frequency = null) => {
 };
 
 //todo Clearing animations
-const handleClearingAnimation = (element) => {
-    element.classList.remove("animate__animated");
+const handleClearingAnimation = (element, effect) => {
+    element.classList.remove("animate__animated", effect);
 };
 
 //todo get random element
