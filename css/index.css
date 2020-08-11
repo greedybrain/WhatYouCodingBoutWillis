@@ -401,6 +401,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers {
   margin-top: 3px;
   height: 100%;
+  width: 5%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul {
@@ -417,7 +418,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul li {
-  padding: 1.5px 20px;
+  padding: 2px 20px;
   text-align: right;
   border-right: none;
   background-color: #272727;
@@ -427,7 +428,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.naya-image-cont-max {
   padding: 20px;
-  width: 40%;
+  width: 35%;
   font-size: 1rem;
   height: 98%;
   border-right: 1px solid #333;
@@ -510,7 +511,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.skills-education {
-  width: 42%;
+  width: 45%;
   height: 98%;
   padding: 20px;
   overflow-y: scroll;

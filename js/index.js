@@ -4,7 +4,7 @@ const editorSimulation = document.querySelector("div.editor-simulation");
 const wrapper = document.querySelector("div.wrapper");
 const landingPage = document.querySelector("div.landing");
 const socialIcons = document.querySelectorAll(".s-icon");
-const numberList = document.querySelector("ul.number-list");
+const numberLists = document.querySelectorAll("ul.number-list");
 const user = document.querySelector("li.user");
 const astronautIcon = user.querySelector("i");
 const git = document.querySelector("li.git");
@@ -117,10 +117,12 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
 
 const handleNumberListRender = () => {
     for (let x = 1; x <= 36; x++) {
-        const num = document.createElement("li");
-        num.classList.add("number");
-        num.textContent = x;
-        numberList.appendChild(num);
+        Array.from(numberLists).forEach((list) => {
+            const num = document.createElement("li");
+            num.classList.add("number");
+            num.textContent = x;
+            list.appendChild(num);
+        });
     }
 };
 
