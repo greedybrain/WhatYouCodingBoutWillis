@@ -31,7 +31,7 @@ const nav = document.querySelector("ul.nav");
 const tabs = document.querySelectorAll(".tab");
 const icons = document.querySelectorAll("ul.nav i");
 const myProjectsContainer = document.querySelector("div.my-projects");
-const lineNumbers = document.querySelector("div.line-numbers");
+const lineNumbersDivs = document.querySelectorAll("div.line-numbers");
 const arrow = document.querySelector("div.arrow i");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -174,6 +174,9 @@ const handleTabClick = () => {
                 nayaImageContWithCaptionMax.style.display = "block";
                 nayaImageContWithCaptionMin.style.display = "block";
                 skillsEducation.style.display = "block";
+                Array.from(lineNumbersDivs).forEach((div) => {
+                    div.style.display = "block";
+                });
 
                 // turn off git stuff
                 git.style.borderLeft = "none";
@@ -195,7 +198,9 @@ const handleTabClick = () => {
                 gitProjects.style.backgroundColor = "#272727";
                 projectsPath.style.display = "block";
                 myProjectsContainer.style.display = "block";
-                lineNumbers.style.display = "none";
+                Array.from(lineNumbersDivs).forEach((div) => {
+                    div.style.display = "none";
+                });
 
                 //turn off user stuff
                 user.style.borderLeft = "none";
@@ -252,6 +257,9 @@ const handleTabContentRender = () => {
                 nayaImageContWithCaptionMax.style.display = "block";
                 nayaImageContWithCaptionMin.style.display = "block";
                 skillsEducation.style.display = "block";
+                Array.from(lineNumbersDivs).forEach((div) => {
+                    div.style.display = "block";
+                });
 
                 // turn off git stuff
                 git.style.borderLeft = "none";
@@ -273,7 +281,9 @@ const handleTabContentRender = () => {
                 gitProjects.style.backgroundColor = "#272727";
                 projectsPath.style.display = "block";
                 myProjectsContainer.style.display = "block";
-                lineNumbers.style.display = "none";
+                Array.from(lineNumbersDivs).forEach((div) => {
+                    div.style.display = "none";
+                });
 
                 //turn off user stuff
                 user.style.borderLeft = "none";
