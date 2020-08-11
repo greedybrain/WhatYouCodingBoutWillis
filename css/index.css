@@ -307,7 +307,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer div.so
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit {
   position: relative;
-  width: 100%;
+  width: 95%;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-head ul {
@@ -388,7 +388,6 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
-  width: 95%;
   height: 88vh;
   overflow-y: scroll;
   display: -webkit-box;
