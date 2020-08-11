@@ -51,6 +51,13 @@ const doSomethingOnViewPort768AndLower = (test) => {
         hireMe.style.fontSize = ".5rem";
         handleSocialIconAnimation();
         explorer.style.display = "flex";
+        // editCont.style.width = "95%";
+        Array.from(lineNumbersDivs).forEach((div) => {
+            div.style.width = "5%";
+            Array.from(div.querySelectorAll("ul li")).forEach((num) => {
+                num.style.fontSize = "1rem";
+            });
+        });
     }
 };
 
