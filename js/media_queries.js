@@ -66,6 +66,20 @@ const doSomethingOnViewPort600AndLower = (test) => {
         nayaImageContWithCaptionMax.querySelector(
             "div.about-wrapper span, p.about"
         ).style.fontSize = ".8rem";
+
+        Array.from(dividers).forEach((divider) => {
+            divider.style.fontSize = ".8rem";
+        });
+        education.querySelector("div.fs .fs-logo").style.width = "20px";
+        education.querySelector("div.fs .fs-title").style.fontSize = ".8rem";
+        Array.from(education.querySelectorAll("div.ed-icon i")).forEach((icon) => {
+            icon.style.fontSize = ".7rem";
+        });
+        Array.from(education.querySelectorAll("div.award-info")).forEach(
+            (award) => {
+                award.style.fontSize = ".8rem";
+            }
+        );
     } else {
         nayaImageContWithCaptionMax.querySelector(
             "div.name-wrapper "
@@ -73,6 +87,14 @@ const doSomethingOnViewPort600AndLower = (test) => {
         nayaImageContWithCaptionMax.querySelector(
             "div.about-wrapper span, p.about"
         ).style.fontSize = "1rem";
+        Array.from(dividers).forEach((divider) => {
+            divider.style.fontSize = "1rem";
+        });
+        education.querySelector("div.fs .fs-logo").style.width = "30px";
+        education.querySelector("div.fs .fs-title").style.fontSize = "1rem";
+        Array.from(education.querySelectorAll("div.ed-icon i")).forEach((icon) => {
+            icon.style.fontSize = "1.2rem";
+        });
     }
 };
 

@@ -39,6 +39,8 @@ const footer = document.querySelector("div.footer");
 const titleInFooter = document.querySelector("span.title-in-footer");
 const explorer = document.querySelector("div.explorer");
 const editCont = document.querySelector("div.edit");
+const dividers = document.querySelectorAll("div.divider");
+const education = document.querySelector("div.education");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleReRenderIfVisitedAlready();
