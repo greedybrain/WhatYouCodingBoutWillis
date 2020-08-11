@@ -73,6 +73,7 @@ body {
 }
 
 body div.wrapper {
+  width: 100%;
   height: 100%;
   min-height: 500px;
   display: -webkit-box;
@@ -84,7 +85,6 @@ body div.wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -235,7 +235,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit {
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.explorer {
   background-color: #3d3d3d;
-  width: 50px;
+  width: 5%;
   height: 97.2vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +388,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.edit-h
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content {
+  width: 95%;
   height: 88vh;
   overflow-y: scroll;
   display: -webkit-box;
