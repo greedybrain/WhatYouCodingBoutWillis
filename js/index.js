@@ -33,6 +33,12 @@ const icons = document.querySelectorAll("ul.nav i");
 const myProjectsContainer = document.querySelector("div.my-projects");
 const lineNumbersDivs = document.querySelectorAll("div.line-numbers");
 const arrow = document.querySelector("div.arrow i");
+const copyright = document.querySelector("div.copyright");
+const hireMe = document.querySelector("div.hire-me");
+const footer = document.querySelector("div.footer");
+const titleInFooter = document.querySelector("span.title-in-footer");
+const explorer = document.querySelector("div.explorer");
+const editCont = document.querySelector("div.edit");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleReRenderIfVisitedAlready();
@@ -64,7 +70,6 @@ const handleIconAnimation = () => {
 const handleReRenderIfVisitedAlready = () => {
     if (localStorage.url === "http://whatyoucodingboutwillis.com/") {
         landingPage.style.display = "none";
-        // wrapper.style.minWidth = "1200px";
         editorSimulation.style.display = "block";
         handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
         handleSocialIconAnimation();
@@ -105,8 +110,6 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
         }, 500);
         setTimeout(() => {
             landingPage.style.display = "none";
-            // wrapper.style.minWidth = "1000px";
-            // wrapper.style.maxWidth = "1000px";
             editorSimulation.style.display = "block";
             handleAnimation(editorSimulation, "animate__fadeInUp", "animate__fast");
         }, 1000);
