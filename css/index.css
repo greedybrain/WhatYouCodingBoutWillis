@@ -55,7 +55,7 @@ div.divider {
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -395,7 +395,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   display: flex;
   position: relative;
   z-index: 200;
-  padding-top: 5px;
+  padding: 5px 5px 0 5px;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers {
@@ -415,6 +415,7 @@ body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-
   border-right: 1px solid #ffffff2d;
   height: 100%;
   padding-top: 15px;
+  overflow: hidden;
 }
 
 body div.wrapper div.editor-simulation div.explorer-and-edit div.edit div.inner-content div.line-numbers ul li {

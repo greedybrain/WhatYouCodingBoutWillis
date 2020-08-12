@@ -41,6 +41,11 @@ const explorer = document.querySelector("div.explorer");
 const editCont = document.querySelector("div.edit");
 const dividers = document.querySelectorAll("div.divider");
 const education = document.querySelector("div.education");
+const innerContent = document.querySelector("div.inner-content");
+const htmlMocks = document.querySelectorAll("span.html-mock");
+const subtitles = document.querySelectorAll("li.sub-title");
+const langTitles = document.querySelectorAll("div.lang-title");
+const langLogos = document.querySelectorAll("div.lang-logo");
 
 document.addEventListener("DOMContentLoaded", () => {
     handleReRenderIfVisitedAlready();
@@ -121,7 +126,7 @@ const handleRemoveLandingPageThenShowPortfolio = () => {
 //todo handling rendering number list
 
 const handleNumberListRender = () => {
-    for (let x = 1; x <= 36; x++) {
+    for (let x = 1; x <= 500; x++) {
         Array.from(numberLists).forEach((list) => {
             const num = document.createElement("li");
             num.classList.add("number");
